@@ -14,10 +14,11 @@
 
 .ldt {
 	overflow: auto;
-	position: relative;
 }
 
 .ldt pre {
 	margin: 0;
 	overflow: initial;
+	border-color: transparent !important;
+	background-color: transparent !important;
 }
