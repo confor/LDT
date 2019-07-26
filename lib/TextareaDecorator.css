@@ -4,24 +4,13 @@
  * Provides styles for rendering a textarea on top of a pre with scrollbars
  */
 
-/* settings you can play with */
-
-.ldt, .ldt pre {
-	color: black;
-}
-
 .force-monospace {
 	font-family: monospace !important;
 }
 
-.ldt textarea {
-	/* fallback for browsers without rgba */
-	color: transparent !important;
-	/* make sure the alpha is low enough so it doesn't block the output layer */
-	color: rgba(0,0,0,.2) !important;
+.ldt, .ldt pre {
+	color: black;
 }
-
-/* settings you shouldn't play with unless you have a good reason */
 
 .ldt {
 	overflow: auto;
@@ -32,18 +21,3 @@
 	margin: 0;
 	overflow: initial;
 }
-
-.ldt textarea {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	background: 0;
-	outline: none;
-	resize: none;
-	min-width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	/* IE doesn't support rgba texarea, so use vendor specific alpha filter */
-	filter: alpha(opacity = 20);
-}
-
